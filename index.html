@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Папа я на лабе</title>
+    <link rel="stylesheet" href="style.css">
+    <qrcode-stream @detect="onDetect"></qrcode-stream>
+</head>
+<body>
+    <div name="container">
+    <div id="reader"  width="600px"> </div>
+        <p><input placeholder="Имя" name="name" id="FirtsName" /></p>
+        <p><input placeholder="Фамилия" name="sername" id="LastName" /></p>
+        <button name="scan" onclick="alerted()">Скан</button>
+
+
+    </div>
+    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
